@@ -7,16 +7,24 @@
   <title>Eco Controll - Download</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #1B2E35;
       color: white;
+
       display: flex;
       justify-content: center;
       align-items: center;
+
       min-height: 100vh;
       text-align: center;
+
+      padding: 40px 20px;
     }
 
     .container {
@@ -24,7 +32,7 @@
       padding: 40px 30px;
       border-radius: 20px;
       max-width: 420px;
-      width: 90%;
+      width: 100%;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
     }
 
@@ -33,20 +41,21 @@
       height: 110px;
       border-radius: 20px;
       margin-bottom: 20px;
-      object-fit: cover;
+      object-fit: contain;
     }
 
     h1 {
-      margin-bottom: 10px;
+      margin: 0 0 16px 0;
       color: #4CAF50;
       font-size: 32px;
+      font-weight: bold;
     }
 
     p {
-      color: #d9d9d9;
+      color: #f1f1f1;
       font-size: 16px;
       line-height: 1.5;
-      margin-bottom: 30px;
+      margin: 0 0 30px 0;
     }
 
     .btn-download {
@@ -54,22 +63,65 @@
       background-color: #4CAF50;
       color: white;
       padding: 15px 28px;
-      border-radius: 12px;
+      border-radius: 10px;
       text-decoration: none;
       font-size: 18px;
       font-weight: bold;
-      transition: 0.3s;
+      transition: 0.3s ease;
+      margin-bottom: 28px;
     }
 
     .btn-download:hover {
-      background-color: #43a047;
+      background-color: #43A047;
       transform: scale(1.03);
     }
 
     .aviso {
-      margin-top: 25px;
+      margin: 0;
       font-size: 13px;
-      color: #bdbdbd;
+      color: #e0e0e0;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        align-items: flex-start;
+        padding: 32px 18px;
+      }
+
+      .container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 32px 22px;
+        border-radius: 18px;
+      }
+
+      .logo {
+        width: 95px;
+        height: 95px;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: 28px;
+        margin-bottom: 14px;
+      }
+
+      p {
+        font-size: 15px;
+        margin-bottom: 28px;
+      }
+
+      .btn-download {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 17px;
+        margin-bottom: 26px;
+      }
+
+      .aviso {
+        font-size: 13px;
+      }
     }
   </style>
 </head>
@@ -87,14 +139,13 @@
 
     <a 
       class="btn-download"
-      href="https://github.com/ECO-CONTROLL/Teste_Download/releases/latest/download/v1.0/eco-controll.apk"
-      download>
+      href="https://github.com/ECO-CONTROLL/Teste_Download/releases/latest/download/v1.0/eco-controll.apk">
       Baixar aplicativo
     </a>
 
     <p class="aviso">
-      Disponível para Android. Pode ser necessário permitir instalação
-      de aplicativos de fontes externas.
+      Disponível para Android. Pode ser necessário permitir instalação de
+      aplicativos de fontes externas.
     </p>
   </div>
 
